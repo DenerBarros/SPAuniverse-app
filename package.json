@@ -1,0 +1,15 @@
+{
+  "name": "spauniverse-app",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Gif of the finished project SPA Universe\" title=\"gif\" src=\"./images/spa-universe.gif\" />\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
