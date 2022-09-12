@@ -1,10 +1,7 @@
 # SPA Universe
 
-<h1 align="center">
-    <img alt="Gif of the finished project SPA Universe" title="gif" src="./images/spa-universe.gif" />
-</h1>
 
-<br>
+
 
 ### 💻 SPA Universe
 
