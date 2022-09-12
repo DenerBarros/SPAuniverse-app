@@ -1,0 +1,168 @@
+/* Google Fonts Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* HTML5 display-role reset for browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Global variables */
+:root {
+  --primary-color: #FFF;
+  --second-color: #E1E1E6;
+  --blue-color: #02799D;
+
+  font-size: 62.5%;
+}
+
+/* Global */
+.hide {
+  display: none;
+}
+
+.universe {
+
+  background-image: url('../images/mountains-universe-2.svg');
+}
+
+.exploration {
+  background-image: url('../images/mountains-universe-3.svg');
+}
+
+body.home a:nth-child(1) {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+body.universe a:nth-child(2) {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+body.exploration a:nth-child(3) {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+
+/* =============  Body  ================== */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  max-height: 100%;
+  background-image: url('../images/mountains-universe-1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* =============  Navigation ================ */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 7.2rem;
+  font-size: clamp(1rem , 1.4rem + 1vw, 2.4rem);
+  
+}
+
+nav ul a {
+  color: var(--second-color);
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+  border-bottom: 2px solid var(--blue-color);
+  transition: ease-in 400ms;
+}
+
+/* ============ Home Page =============== */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17.2rem;
+  gap: 24px;
+}
+
+.home-page h1 {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: clamp(3.8rem, 3.4rem + 1vw, 6rem);
+}
+
+.home-page .btn-home {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  padding: 1.2rem 3.2rem;
+  text-transform: uppercase;
+  border: 2px solid  var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-page .btn-home:hover {
+  color: var(--blue-color);
+  background-color: var(--primary-color);
+  transition: ease-in 400ms;
+}
+
+/* ============ Universe/Exploration Page =============== */
+.universe-page, 
+.exploration-page {
+  color: var(--second-color);
+  margin-top: 6.3rem;
+  padding-left: 10.2rem;
+  padding-right: 2rem;
+}
+
+.universe-page h1, 
+.exploration-page h1 {
+  font-size: 4.8rem;
+}
+
+
+.universe-page p, 
+.exploration-page p {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  max-width: 64.8rem;
+}
+
+/* ============ Mobile =============== */
+@media (max-width: 484px) {
+  nav {
+    justify-content: center;
+    padding: 4rem 2.2rem;
+    font-size: small;
+  }
+
+  .universe-page, 
+  .exploration-page {
+    margin-top: 6.3rem;
+    padding-left: 10.2rem;
+    padding-right: 2rem;
+  }
+
+
+  .universe-page h1, 
+  .exploration-page h1 {
+  font-size: 4rem;
+  }
+
+
+  .universe-page p, 
+  .exploration-page p {
+    font-size: 1.4rem;
+  }
+}
+
